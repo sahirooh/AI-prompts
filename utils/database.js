@@ -7,7 +7,7 @@ export const connectToDB = async () => {
     mongoose.set('strictQuery', true);
 
     if(isConnected) {
-        cnsole.log("=> using existing database connection");
+        console.log("=> using existing database connection");
         return;
     }
 
@@ -18,7 +18,7 @@ export const connectToDB = async () => {
             useUnifiedTopology: true,
     })
     isConnected = true;
-    cnsole.log("MongoDB connected");
+    console.log("MongoDB connected");
     }catch(err) {
         console.log(err);
     }
