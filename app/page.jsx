@@ -1,3 +1,4 @@
+import Feed from "@/components/Feed"
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
             tool for modern world to discover, create
             and share creative prompts.
         </p>
+        <Feed />
     </section>
   )
 }
